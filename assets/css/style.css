@@ -93,9 +93,18 @@ footer p {
 }
 /* Footer End */
 
-/* Section Padding */
+/* Section Style */
 section {
   padding: 60px;
+  height: 100vh;
+}
+
+.section-title {
+  font-size: 12vh;
+  font-family: Custard;
+  color: var(--light-purple);
+  position: relative;
+  top: -8vh;
 }
 /* Section End */
 
@@ -106,7 +115,6 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  height: 100vh;
 }
 
 .hero img {
@@ -133,3 +141,67 @@ section {
   font-size: 5.8vh;
   margin-left: 60vh;
 }
+/* Home and Hero End */
+
+/* About Style */
+#about {
+  background-color: var(--army-green);
+  background-size: cover;
+  display: flex;
+  /* justify-content: flex-start; */
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+#erica {
+  margin-right: 10vh;
+  margin-left: -20vh;
+  border-bottom: 2vh solid;
+  border-color: var(--orange);
+}
+
+#erica img {
+  width: 40vh;
+  height: 40vh;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.top-flowers {
+  /* margin-left: 10vh;
+  margin-right: -20vh; */
+}
+
+#flower-1 {
+  width: 300px;
+  height: 300px;
+}
+
+#flower-2 {
+  width: 100px;
+  height: 100px;
+}
+
+#about p {
+  font-family: Hobeaux;
+  font-size: 1vh;
+  border-bottom: 2vh solid;
+  border-color: var(--orange);
+}
+
+.bottom-flowers {
+}
+
+#flower-3 {
+  width: 100px;
+  height: 100px;
+}
+
+#flower-4 {
+  width: 100px;
+  height: 100px;
+}
+
+/* About End */

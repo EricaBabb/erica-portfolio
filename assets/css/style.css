@@ -27,3 +27,51 @@
   font-family: HWTArabesque;
   src: url(./hwt-arabesque.otf);
 }
+
+/* Header Styling */
+header {
+  padding: 20px 45px;
+  font-family: Custard;
+  background-color: var(--dark-purple);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+header h1 {
+  font-size: 40px;
+  color: var(--mid-purple);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+  text-decoration: none;
+  color: var(--light-purple);
+}
+
+header nav ul {
+  margin: 7px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 45px;
+  font-size: 1.6vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+  background: var(--orange);
+  color: var(--indigo);
+  border-radius: 15px;
+  text-shadow: none;
+}
+/* Header and Navigation End */

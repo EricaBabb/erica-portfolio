@@ -30,7 +30,7 @@
 
 /* Header and Navigation Style */
 header {
-  padding: 20px 45px;
+  padding: 15px 45px;
   font-family: Custard;
   background-color: var(--dark-purple);
   display: flex;
@@ -42,7 +42,7 @@ header {
   z-index: 9999;
 }
 
-header h1 {
+header h1 a {
   font-size: 40px;
   color: var(--mid-purple);
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -92,3 +92,44 @@ footer p {
   font-size: 1.3vw;
 }
 /* Footer End */
+
+/* Section Padding */
+section {
+  padding: 60px;
+}
+/* Section End */
+
+/* Home and Hero Style */
+#home {
+  background-color: var(--dark-purple);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.hero img {
+  opacity: 45%;
+  width: 100vh;
+  position: relative;
+  top: -9vh;
+}
+
+.heading {
+  position: absolute;
+  margin-top: 35vh;
+  margin-left: 10vh;
+}
+
+.heading h1 {
+  font-family: HWTArabesque;
+  font-size: 12.5vh;
+  margin-bottom: -1vh;
+}
+
+.heading h2 {
+  font-family: Custard;
+  font-size: 5.8vh;
+  margin-left: 60vh;
+}

@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark-purple: #7200f7;
+  --indigo: #0c025a;
+  --mid-purple: #b880fa;
+  --light-purple: #ddd3eb;
+  --orange: #f5a533;
+  --army-green: #9a9e4f;
+}
+
+@font-face {
+  font-family: Custard;
+  src: url(./custard.otf);
+}
+
+@font-face {
+  font-family: Hobeaux;
+  src: url(./hobeaux.otf);
+}
+
+@font-face {
+  font-family: HWTArabesque;
+  src: url(./hwt-arabesque.otf);
+}

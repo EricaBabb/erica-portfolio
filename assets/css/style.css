@@ -28,7 +28,7 @@
   src: url(./hwt-arabesque.otf);
 }
 
-/* Header Styling */
+/* Header and Navigation Style */
 header {
   padding: 20px 45px;
   font-family: Custard;
@@ -75,3 +75,20 @@ header nav ul li a:hover {
   text-shadow: none;
 }
 /* Header and Navigation End */
+
+/* Footer Style*/
+footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 7px 5px;
+}
+
+footer p {
+  padding: 7px 5px;
+  color: #707070;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3vw;
+}
+/* Footer End */

@@ -152,7 +152,6 @@ section {
   background-color: var(--army-green);
   background-size: cover;
   display: flex;
-  /* justify-content: flex-start; */
   flex-wrap: wrap;
   align-items: flex-start;
 }
@@ -230,7 +229,6 @@ section {
   height: 100px;
   bottom: 80px;
 }
-
 /* About End */
 
 /* Projects Style */
@@ -241,6 +239,60 @@ section {
   /* justify-content: flex-start; */
   flex-wrap: wrap;
   align-items: flex-start;
+}
+.thumbnails {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  bottom: 0;
+  left: 0;
+}
+
+#project-1 {
+  position: absolute;
+  width: 65vh;
+  height: 65vh;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 1%;
+}
+
+#project-2 {
+  position: absolute;
+  width: 28vh;
+  height: 28vh;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 32%;
+  bottom: 5%;
+}
+
+#project-3 {
+  position: absolute;
+  width: 45vh;
+  height: 45vh;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 43%;
+  top: 18%;
+}
+
+#project-4 {
+  position: absolute;
+  width: 57vh;
+  height: 57vh;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  right: 1%;
+  bottom: 3%;
 }
 /* Projects End */
 

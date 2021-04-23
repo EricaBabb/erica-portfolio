@@ -84,6 +84,7 @@ footer {
   flex-wrap: wrap;
   width: 100%;
   padding: 7px 5px;
+  background-color: var(--army-green);
 }
 
 footer p {
@@ -106,7 +107,7 @@ section {
   font-family: Custard;
   color: var(--light-purple);
   position: absolute;
-  left: 500px;
+  left: 42%;
   width: 70vh;
   top: 0px;
 }
@@ -236,10 +237,10 @@ section {
   background-color: var(--dark-purple);
   background-size: cover;
   display: flex;
-  /* justify-content: flex-start; */
   flex-wrap: wrap;
   align-items: flex-start;
 }
+
 .thumbnails {
   position: absolute;
   width: 100%;
@@ -304,48 +305,103 @@ section {
 
 form {
   position: absolute;
-  height: 80%;
-  width: 80%;
+  height: 70%;
+  width: 70%;
+  left: 18%;
+  top: 22%;
 }
 
 .row-1 {
   position: absolute;
-  display: flex;
   top: 20px;
   width: 100%;
 }
 
+#first-name {
+  position: absolute;
+  padding: 2vh 2vh;
+  left: 25%;
+}
+
+#first-name-label {
+  position: relative;
+  left: 24%;
+  padding: 2vh;
+  font-family: Custard;
+  color: var(--light-purple);
+  font-size: 4vh;
+}
+
 #last-name {
   position: absolute;
-  right: 0px;
-  width: 400px;
+  padding: 2vh 2vh;
+  right: 31%;
+  /* width: 400px; */
 }
 
 #last-name-label {
-  position: absolute;
-  right: 200px;
+  position: relative;
+  left: 36.5%;
+  padding: 2vh;
+  font-family: Custard;
+  color: var(--light-purple);
+  font-size: 4vh;
 }
 
 .row-2 {
   position: absolute;
-  top: 100px;
-  width: 100%;
+  top: 26%;
+  width: 75%;
+  left: 25%;
+}
+
+#email {
+  position: absolute;
+  padding: 2vh 22.5vh;
+}
+
+#email-label {
+  font-family: Custard;
+  color: var(--light-purple);
+  font-size: 4vh;
 }
 
 .row-3 {
   position: absolute;
-  top: 200px;
-  width: 100%;
+  top: 48%;
+  width: 75%;
+  left: 25%;
+}
+
+#message {
+  position: absolute;
+  padding: 6vh 22.5vh;
+}
+
+#message-label {
+  font-family: Custard;
+  color: var(--light-purple);
+  font-size: 4vh;
 }
 
 button {
   position: absolute;
+  width: 22vh;
+  height: 6vh;
   bottom: 0px;
-  left: 400px;
+  left: 38.5%;
+  background-color: var(--orange);
+  border-radius: 10px;
+  font-family: HWTArabesque;
+  color: var(--indigo);
+  font-size: 4vh;
 }
 
 .form-input {
-  border: 0.4vh solid var(--orange);
+  border: 0.5vh solid var(--orange);
+  font-family: Hobeaux;
+  font-size: 2vh;
   display: block;
-  padding: 1vh 2vh;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
 }

@@ -46,16 +46,16 @@
     <!-- About Section -->
     <section id="about">
         <h2 class="section-title">About Me</h2>
-        <div id="erica">
-            <img src="assets/images/erica.jpg" alt="Erica">
-        </div>
+       
+            <img id="erica" src="assets/images/erica.jpg" alt="Erica">
+    
         <div class="top-flowers">
             <img id="flower-1" src="assets/images/flower.png" alt="">
             <img id="flower-2" src="assets/images/flower.png" alt="">
         </div>
-        
+        <span class="rectangle-1"></span>
             <p>I’m Erica: an aspiring web developer and current student at IUPUI majoring in media arts and science with a minor in biology. I’ve had the pleasure of working with X,Y, and Z. I have over X years experience with HTML, CSS, and javascript. </p>
-        
+        <span class="rectangle-2"></span>
         <div class="bottom-flowers">
             <img id="flower-3" src="assets/images/flower.png" alt="">
             <img id="flower-4" src="assets/images/flower.png" alt="">
@@ -64,11 +64,46 @@
     <!-- End of About Section -->
 
     <!-- Projects Section -->
-    <section id="projects"></section>
+    <section id="projects">
+        <h2 class="section-title">Projects</h2> 
+        <!-- <div class="thumbnails">
+            <img id="project1" src="assets/images/soap-factory.png" alt="">
+            <img id="project2" src="assets/images/soap-factory.png" alt="">
+            <img id="project3" src="assets/images/soap-factory.png" alt="">
+            <img id="project4" src="assets/images/soap-factory.png" alt="">
+        </div> -->
+    </section>
     <!-- End of Projects Section -->
 
     <!-- Contact Section -->
-    <section id="contact"></section>
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div id="form">
+            <form>
+                <div class="row-1">
+                    <label for="first-name">First Name*</label>
+                    <input type="text" placeholder="First Name" id="first-name" name="first-name" class="form-input"/>
+    
+                    <label for="last-name" id="last-name-label">Last Name*</label>
+                    <input type="text" placeholder="Last Name" id="last-name" name="last-name" class="form-input"/>
+                </div>
+                
+                <div class="row-2">
+                    <label for="email">Email*</label>
+                    <input type="email" placeholder="Email Address" id="email" name="email" class="form-input"/>
+                </div>
+                
+                <div class="row-3">
+                    <label for="message">Message*</label>
+                    <input type="text" placeholder="Message" id="message" name="message" class="form-input"/>
+                </div>
+                
+                <button type="submit">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </section>
     <!-- End of Contact Section -->
 
     <!-- Footer -->

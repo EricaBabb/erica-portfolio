@@ -10,12 +10,12 @@
     <!-- Header and Navigation -->
     <header>
         <h1>
-            Erica Babb
+        <a href="/">Erica Babb</a>
         </h1>
         <nav>
             <ul>
                 <li>
-                    <a href="/index.html">Home</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li>
                     <a href="#about">About</a>
@@ -31,7 +31,122 @@
     </header>
     <!-- End of Header and Navigation -->
 
-    <!-- Section -->
+    <!-- Home and Hero Section -->
+    <section id="home">
+        <div class="hero">
+            <img src="assets/images/cloud.png" alt="Cloud">
+        </div>
+        <div class="heading">
+            <h1>Bringing Life to Your Ideas</h1>
+            <h2>See How It's Done</h2>
+        </div>  
+    </section>
+    <!-- End of Home and Hero Section -->
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+       
+            <img id="erica" src="assets/images/erica.jpg" alt="Erica">
+    
+        <div class="top-flowers">
+            <img id="flower-1" src="assets/images/flower.png" alt="">
+            <img id="flower-2" src="assets/images/flower.png" alt="">
+        </div>
+        <span class="rectangle-1"></span>
+            <p>I’m Erica: an aspiring web developer and current student at IUPUI majoring in media arts and science with a minor in biology. I’ve had the pleasure of working with X,Y, and Z. I have over X years experience with HTML, CSS, and javascript. </p>
+        <span class="rectangle-2"></span>
+        <div class="bottom-flowers">
+            <img id="flower-3" src="assets/images/flower.png" alt="">
+            <img id="flower-4" src="assets/images/flower.png" alt="">
+        </div>
+    </section>
+    <!-- End of About Section -->
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div>
+            <h2 class="section-title">Projects</h2>
+        </div>
+         
+        <div class="thumbnails">
+
+            <div class="container">
+                <a href="https://ericababb.github.io/robot-gladiator/" target="_blank">
+                    <div id="project-1"  class="image" >
+
+                    <div class="overlay" id="overlay-1">Robot Gladiator JS Game</div>
+                </div>
+                </a>
+                
+            </div>
+
+            <div class="container">
+                <a href="https://ericababb.github.io/run-buddy/" target="_blank">
+                     <div id="project-2" class="image" >
+
+                <div class="overlay" id="overlay-2">Gorillaz Fan Page</div>
+            </div>
+            </a>
+
+            </div>
+
+            <div class="container">
+                <a href="https://ericababb.github.io/horiseon-refactor/" target="_blank">
+                    <div id="project-3" class="image">
+
+                <div class="overlay" id="overlay-3">Horiseon Refactor</div>
+                </div>
+            </a>
+
+            </div>
+
+            <div class="container">
+                <a href="https://ericababb.github.io/run-buddy/" target="_blank">
+                    <div id="project-4" class="image" >
+                <div class="overlay" id="overlay-4">Run Buddy</div>
+            </div>
+        </a>
+            </div>
+            
+        </div>
+    </section>
+    <!-- End of Projects Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div id="form">
+            <form>
+                <div class="row-1">
+                    <label for="name" id="name-label">Name*</label>
+                    <input type="text" placeholder="Name" id="name" name="name" class="form-input"/>
+                </div>
+                
+                <div class="row-2">
+                    <label for="email" id="email-label">Email*</label>
+                    <input type="email" placeholder="Email Address" id="email" name="email" class="form-input"/>
+                </div>
+                
+                <div class="row-3">
+                    <label for="message" id="message-label">Message*</label>
+                    <input type="text" placeholder="Message" id="message" name="message" class="form-input"/>
+                </div>
+                
+                <button type="submit">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </section>
+    <!-- End of Contact Section -->
+
+    <!-- Footer -->
+    <footer>
+         <p> &copy; 2021 Erica Babb.</p> 
+         <p>Terms of Service. Privacy Policy.</p>
+    </footer>
+    <!-- End of Footer -->
     
 </body>
 </html>

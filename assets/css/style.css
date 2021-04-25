@@ -1,0 +1,648 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Common Colors */
+:root {
+  --dark-purple: #7200f7;
+  --indigo: #0c025a;
+  --mid-purple: #b880fa;
+  --light-purple: #ddd3eb;
+  --orange: #f5a533;
+  --army-green: #9a9e4f;
+}
+
+/* Common Fonts */
+@font-face {
+  font-family: Custard;
+  src: url(./custard.otf);
+}
+
+@font-face {
+  font-family: Hobeaux;
+  src: url(./hobeaux.otf);
+}
+
+@font-face {
+  font-family: HWTArabesque;
+  src: url(./hwt-arabesque.otf);
+}
+
+/* Header and Navigation Style */
+header {
+  padding: 15px 45px;
+  font-family: Custard;
+  background-color: var(--dark-purple);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+header h1 a {
+  font-size: 40px;
+  color: var(--mid-purple);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+  text-decoration: none;
+  color: var(--light-purple);
+}
+
+header nav ul {
+  margin: 7px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 45px;
+  font-size: 1.6vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+  background: var(--orange);
+  color: var(--indigo);
+  border-radius: 15px;
+  text-shadow: none;
+}
+/* Header and Navigation End */
+
+/* Footer Style*/
+footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 7px 5px;
+  background-color: var(--army-green);
+}
+
+footer p {
+  padding: 7px 5px;
+  color: #707070;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3vw;
+}
+/* Footer End */
+
+/* Section Style */
+section {
+  padding: 60px;
+  height: 100vh;
+  position: relative;
+}
+
+.section-title {
+  font-size: 12vh;
+  font-family: Custard;
+  color: var(--light-purple);
+  position: absolute;
+  left: 42%;
+  width: 40vh;
+  top: 0px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* Section End */
+
+/* Home and Hero Style */
+#home {
+  background-color: var(--dark-purple);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero img {
+  opacity: 45%;
+  width: 750px;
+  height: 100%;
+  position: relative;
+  top: -9vh;
+}
+
+.heading {
+  position: absolute;
+  margin-top: 35vh;
+  margin-left: 10vh;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.heading h1 {
+  font-family: HWTArabesque;
+  font-size: 12.5vh;
+  margin-bottom: -1vh;
+  width: 100%;
+}
+
+.heading h2 {
+  font-family: Custard;
+  font-size: 5.8vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+/* Home and Hero End */
+
+/* About Style */
+#about {
+  background-color: var(--army-green);
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* My picture */
+#erica {
+  width: 40vh;
+  height: 35vh;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.top-flowers {
+  position: absolute;
+  right: 0px;
+  bottom: 50%;
+  height: 300px;
+  width: 500px;
+}
+
+#flower-1 {
+  width: 100px;
+  height: 100px;
+}
+
+#flower-2 {
+  width: 300px;
+  height: 300px;
+}
+
+#about p {
+  position: absolute;
+  font-family: Hobeaux;
+  font-size: 4.8vh;
+  bottom: 150px;
+  width: 900px;
+  height: 180px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Rectangle on top of paragraph */
+.rectangle-1 {
+  position: absolute;
+  bottom: 335px;
+  width: 55%;
+  border: 5px var(--orange) solid;
+  border-radius: 20px;
+}
+
+/* Rectangle on bottom of paragraph */
+.rectangle-2 {
+  position: absolute;
+  bottom: 150px;
+  width: 15%;
+  border: 5px var(--orange) solid;
+  border-radius: 20px;
+}
+
+.bottom-flowers {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 600px;
+  height: 300px;
+}
+
+#flower-3 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  bottom: 0px;
+  right: 30px;
+}
+
+#flower-4 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: 80px;
+}
+/* About End */
+
+/* Projects Style */
+#projects {
+  background-color: var(--dark-purple);
+  display: flex;
+}
+
+/* Title Overlay */
+
+.image {
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.overlay {
+  display: flex;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  transition: 0.5s ease;
+  font-family: Custard;
+  opacity: 0;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+#overlay-1 {
+  font-size: 10vh;
+}
+
+#overlay-2 {
+  font-size: 5vh;
+  padding: 10px;
+}
+
+#overlay-3 {
+  font-size: 10vh;
+}
+#overlay-4 {
+  font-size: 9vh;
+  width: 100%;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+/* End of Overlay */
+
+.thumbnails {
+  width: 100%;
+}
+
+#project-1 {
+  position: absolute;
+  width: 65vh;
+  height: 65vh;
+  border-radius: 50%;
+  background-image: url("/assets/images/robot-gladiator.jpg");
+}
+
+#project-2 {
+  position: absolute;
+  width: 28vh;
+  height: 28vh;
+  border-radius: 50%;
+  background-image: url("/assets/images/fan-page.jpg");
+  left: 32%;
+  bottom: 5%;
+}
+
+#project-3 {
+  position: absolute;
+  width: 45vh;
+  height: 45vh;
+  border-radius: 50%;
+  background-image: url("/assets/images/horiseon-screenshot.png");
+  left: 43%;
+  top: 18%;
+}
+
+#project-4 {
+  position: absolute;
+  width: 57vh;
+  height: 57vh;
+  border-radius: 50%;
+  background-image: url("/assets/images/run-buddy.png");
+  right: 1%;
+  bottom: 3%;
+}
+/* Projects End */
+
+/* Contact Style */
+#contact {
+  background-color: var(--army-green);
+  background-size: cover;
+}
+
+form {
+  position: absolute;
+  height: 70%;
+  width: 70%;
+  left: 18%;
+  top: 22%;
+}
+
+.row-1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  left: 25%;
+}
+
+#name {
+  position: absolute;
+  padding: 2vh 22.5vh;
+}
+
+#name-label {
+  position: relative;
+  padding: 2vh;
+  font-family: Custard;
+  color: var(--light-purple);
+  font-size: 4vh;
+}
+
+.row-2 {
+  position: absolute;
+  top: 26%;
+  width: 75%;
+  left: 25%;
+}
+
+#email {
+  position: absolute;
+  padding: 2vh 22.5vh;
+}
+
+#email-label {
+  font-family: Custard;
+  color: var(--light-purple);
+  font-size: 4vh;
+}
+
+.row-3 {
+  position: absolute;
+  top: 48%;
+  width: 75%;
+  left: 25%;
+}
+
+#message {
+  position: absolute;
+  padding: 6vh 22.5vh;
+}
+
+#message-label {
+  font-family: Custard;
+  color: var(--light-purple);
+  font-size: 4vh;
+}
+
+button {
+  position: absolute;
+  width: 22vh;
+  height: 6vh;
+  bottom: 0px;
+  left: 38.5%;
+  background-color: var(--orange);
+  border-radius: 10px;
+  font-family: HWTArabesque;
+  color: var(--indigo);
+  font-size: 4vh;
+}
+
+.form-input {
+  border: 0.5vh solid var(--orange);
+  font-family: Hobeaux;
+  font-size: 2vh;
+  display: block;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 700px;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2,
+  footer div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero,
+  #form {
+    width: 100%;
+  }
+
+  #about p {
+    width: 780px;
+  }
+
+  .rectangle-2 {
+    bottom: 120px;
+  }
+
+  #project-1 {
+    width: 45vh;
+    height: 45vh;
+  }
+
+  #project-2 {
+    width: 23vh;
+    height: 23vh;
+    bottom: 10%;
+  }
+
+  #project-3 {
+    width: 37vh;
+    height: 37vh;
+    top: 23%;
+  }
+
+  #project-4 {
+    width: 46vh;
+    height: 46vh;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+
+  #about p {
+    width: 600px;
+  }
+
+  .rectangle-2 {
+    bottom: 80px;
+  }
+
+  #flower-4 {
+    bottom: 0px;
+    left: 20px;
+  }
+
+  #erica {
+    width: 25vh;
+    height: 25vh;
+  }
+
+  #project-1 {
+    width: 40vh;
+    height: 40vh;
+  }
+
+  #project-2 {
+    width: 23vh;
+    height: 23vh;
+    bottom: 25%;
+    left: 15%;
+  }
+
+  #project-3 {
+    width: 32vh;
+    height: 32vh;
+    top: 22%;
+    left: 50%;
+  }
+
+  #project-4 {
+    width: 40vh;
+    height: 40vh;
+  }
+
+  #name,
+  #email,
+  #message {
+    padding-left: 16.5vh;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  .section-title {
+    /* width: 95%; */
+  }
+
+  header nav ul li a {
+    padding: 5px 20px;
+  }
+
+  .heading h1 {
+    font-size: 9.5vh;
+  }
+
+  .heading h2 {
+    font-size: 5.5vh;
+  }
+
+  .top-flowers {
+    left: 50%;
+    bottom: 30%;
+  }
+
+  #flower-1 {
+    width: 50px;
+    height: 50px;
+  }
+
+  #flower-2 {
+    width: 150px;
+    height: 150px;
+  }
+
+  #flower-3 {
+    width: 80px;
+    height: 80px;
+  }
+
+  #flower-4 {
+    width: 50px;
+    height: 50px;
+    left: 10%;
+  }
+
+  #about p {
+    width: 450px;
+    font-size: 27px;
+  }
+
+  #project-1 {
+    width: 38vh;
+    height: 38vh;
+    top: 10%;
+  }
+
+  #overlay-1 {
+    font-size: 8vh;
+  }
+
+  #project-2 {
+    width: 20vh;
+    height: 20vh;
+    bottom: 25%;
+    left: 15%;
+  }
+
+  #project-3 {
+    width: 28vh;
+    height: 28vh;
+    top: 30%;
+    left: 55%;
+  }
+
+  #overlay-3 {
+    font-size: 8vh;
+  }
+
+  #project-4 {
+    width: 32vh;
+    height: 32vh;
+  }
+
+  #name,
+  #email,
+  #message {
+    padding-left: 7.5vh;
+  }
+
+  .row-1,
+  .row-2,
+  .row-3 {
+    left: 15%;
+  }
+}

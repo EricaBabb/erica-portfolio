@@ -314,7 +314,7 @@ section {
   width: 28vh;
   height: 28vh;
   border-radius: 50%;
-  background-image: url("/assets/images/fan-page.jpg");
+  background-image: url("../images/fan-page.jpg");
   left: 32%;
   bottom: 5%;
 }
@@ -324,7 +324,7 @@ section {
   width: 45vh;
   height: 45vh;
   border-radius: 50%;
-  background-image: url("/assets/images/horiseon-screenshot.png");
+  background-image: url("../images/horiseon-screenshot.png");
   left: 43%;
   top: 18%;
 }
@@ -334,7 +334,7 @@ section {
   width: 57vh;
   height: 57vh;
   border-radius: 50%;
-  background-image: url("/assets/images/run-buddy.png");
+  background-image: url("../images/run-buddy.png");
   right: 1%;
   bottom: 3%;
 }

@@ -169,6 +169,7 @@ section {
 .top-flowers {
   position: absolute;
   right: 0px;
+  bottom: 50%;
   height: 300px;
   width: 500px;
 }
@@ -235,18 +236,90 @@ section {
 /* Projects Style */
 #projects {
   background-color: var(--dark-purple);
-  background-size: cover;
+  /* background-size: cover; */
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
 }
 
-.thumbnails {
-  position: absolute;
+/* Title Overlay */
+.container {
+}
+
+.image {
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.overlay {
+  display: flex;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  transition: 0.5s ease;
+  font-family: Custard;
+  opacity: 0;
+  text-align: center;
+  /* max-height: 15vh; */
   width: 100%;
-  height: 90%;
-  bottom: 0;
-  left: 0;
+}
+
+#overlay-1 {
+  position: absolute;
+  font-size: 10vh;
+  padding: 10px;
+  width: 65vh;
+  height: 65vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  /* font size, padding, w, and h for each id */
+}
+
+#overlay-2 {
+  position: absolute;
+  font-size: 5vh;
+  padding: 10px;
+  width: 28vh;
+  height: 28vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+#overlay-3 {
+  position: absolute;
+  font-size: 10vh;
+  padding: 10px;
+  width: 45vh;
+  height: 45vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+#overlay-4 {
+  position: absolute;
+  font-size: 9vh;
+  padding: 10px;
+  width: 57vh;
+  height: 57vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+/* End of Overlay */
+
+.thumbnails {
+  width: 100%;
 }
 
 #project-1 {
@@ -254,10 +327,7 @@ section {
   width: 65vh;
   height: 65vh;
   border-radius: 50%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  left: 1%;
+  background-image: url("/assets/images/robot-gladiator.jpg");
 }
 
 #project-2 {
@@ -265,9 +335,7 @@ section {
   width: 28vh;
   height: 28vh;
   border-radius: 50%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url("/assets/images/fan-page.jpg");
   left: 32%;
   bottom: 5%;
 }
@@ -277,9 +345,7 @@ section {
   width: 45vh;
   height: 45vh;
   border-radius: 50%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url("/assets/images/horiseon-screenshot.png");
   left: 43%;
   top: 18%;
 }
@@ -289,12 +355,11 @@ section {
   width: 57vh;
   height: 57vh;
   border-radius: 50%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url("/assets/images/run-buddy.png");
   right: 1%;
   bottom: 3%;
 }
+
 /* Projects End */
 
 /* Contact Style */

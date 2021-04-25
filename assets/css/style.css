@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: 2px red solid; */
 }
 
 :root {
@@ -108,7 +107,7 @@ section {
   color: var(--light-purple);
   position: absolute;
   left: 42%;
-  width: 70vh;
+  width: 40vh;
   top: 0px;
 }
 /* Section End */
@@ -124,7 +123,8 @@ section {
 
 .hero img {
   opacity: 45%;
-  width: 100vh;
+  width: 750px;
+  height: 100%;
   position: relative;
   top: -9vh;
 }
@@ -139,12 +139,15 @@ section {
   font-family: HWTArabesque;
   font-size: 12.5vh;
   margin-bottom: -1vh;
+  width: 100%;
 }
 
 .heading h2 {
   font-family: Custard;
   font-size: 5.8vh;
-  margin-left: 60vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
 }
 /* Home and Hero End */
 
@@ -158,7 +161,7 @@ section {
 }
 
 #erica {
-  width: 35vh;
+  width: 40vh;
   height: 35vh;
   border-radius: 50%;
   background-position: center;
@@ -189,7 +192,7 @@ section {
   font-family: Hobeaux;
   font-size: 4.8vh;
   bottom: 150px;
-  width: 980px;
+  width: 900px;
   height: 180px;
 }
 
@@ -236,13 +239,10 @@ section {
 /* Projects Style */
 #projects {
   background-color: var(--dark-purple);
-  /* background-size: cover; */
   display: flex;
 }
 
 /* Title Overlay */
-.container {
-}
 
 .image {
   border-radius: 50%;
@@ -260,57 +260,28 @@ section {
   transition: 0.5s ease;
   font-family: Custard;
   opacity: 0;
-  text-align: center;
-  /* max-height: 15vh; */
   width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 
 #overlay-1 {
-  position: absolute;
   font-size: 10vh;
-  padding: 10px;
-  width: 65vh;
-  height: 65vh;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  /* font size, padding, w, and h for each id */
 }
 
 #overlay-2 {
-  position: absolute;
   font-size: 5vh;
   padding: 10px;
-  width: 28vh;
-  height: 28vh;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
 }
 
 #overlay-3 {
-  position: absolute;
   font-size: 10vh;
-  padding: 10px;
-  width: 45vh;
-  height: 45vh;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
 }
 #overlay-4 {
-  position: absolute;
   font-size: 9vh;
-  padding: 10px;
-  width: 57vh;
-  height: 57vh;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
+  width: 100%;
 }
 
 .container:hover .overlay {
@@ -359,7 +330,6 @@ section {
   right: 1%;
   bottom: 3%;
 }
-
 /* Projects End */
 
 /* Contact Style */
@@ -380,33 +350,16 @@ form {
   position: absolute;
   top: 20px;
   width: 100%;
-}
-
-#first-name {
-  position: absolute;
-  padding: 2vh 2vh;
   left: 25%;
 }
 
-#first-name-label {
-  position: relative;
-  left: 24%;
-  padding: 2vh;
-  font-family: Custard;
-  color: var(--light-purple);
-  font-size: 4vh;
-}
-
-#last-name {
+#name {
   position: absolute;
-  padding: 2vh 2vh;
-  right: 31%;
-  /* width: 400px; */
+  padding: 2vh 22.5vh;
 }
 
-#last-name-label {
+#name-label {
   position: relative;
-  left: 36.5%;
   padding: 2vh;
   font-family: Custard;
   color: var(--light-purple);
@@ -469,4 +422,219 @@ button {
   display: block;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.75);
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 700px;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2,
+  footer div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero,
+  #form {
+    width: 100%;
+  }
+
+  #about p {
+    width: 780px;
+  }
+
+  .rectangle-2 {
+    bottom: 120px;
+  }
+
+  #project-1 {
+    width: 45vh;
+    height: 45vh;
+  }
+
+  #project-2 {
+    width: 23vh;
+    height: 23vh;
+    bottom: 10%;
+  }
+
+  #project-3 {
+    width: 37vh;
+    height: 37vh;
+    top: 23%;
+  }
+
+  #project-4 {
+    width: 46vh;
+    height: 46vh;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+
+  #about p {
+    width: 600px;
+  }
+
+  .rectangle-2 {
+    bottom: 80px;
+  }
+
+  #flower-4 {
+    bottom: 0px;
+    left: 20px;
+  }
+
+  #erica {
+    width: 25vh;
+    height: 25vh;
+  }
+
+  #project-1 {
+    width: 40vh;
+    height: 40vh;
+  }
+
+  #project-2 {
+    width: 23vh;
+    height: 23vh;
+    bottom: 25%;
+    left: 15%;
+  }
+
+  #project-3 {
+    width: 32vh;
+    height: 32vh;
+    top: 22%;
+    left: 50%;
+  }
+
+  #project-4 {
+    width: 40vh;
+    height: 40vh;
+  }
+
+  #name,
+  #email,
+  #message {
+    padding-left: 16.5vh;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  .section-title {
+    /* width: 95%; */
+  }
+
+  header nav ul li a {
+    padding: 5px 20px;
+  }
+
+  .heading h1 {
+    font-size: 9.5vh;
+  }
+
+  .heading h2 {
+    font-size: 5.5vh;
+  }
+
+  .top-flowers {
+    left: 50%;
+    bottom: 30%;
+  }
+
+  #flower-1 {
+    width: 50px;
+    height: 50px;
+  }
+
+  #flower-2 {
+    width: 150px;
+    height: 150px;
+  }
+
+  #flower-3 {
+    width: 80px;
+    height: 80px;
+  }
+
+  #flower-4 {
+    width: 50px;
+    height: 50px;
+    left: 10%;
+  }
+
+  #about p {
+    width: 450px;
+    font-size: 27px;
+  }
+
+  #project-1 {
+    width: 38vh;
+    height: 38vh;
+    top: 10%;
+  }
+
+  #overlay-1 {
+    font-size: 8vh;
+  }
+
+  #project-2 {
+    width: 20vh;
+    height: 20vh;
+    bottom: 25%;
+    left: 15%;
+  }
+
+  #project-3 {
+    width: 28vh;
+    height: 28vh;
+    top: 30%;
+    left: 55%;
+  }
+
+  #overlay-3 {
+    font-size: 8vh;
+  }
+
+  #project-4 {
+    width: 32vh;
+    height: 32vh;
+  }
+
+  #name,
+  #email,
+  #message {
+    padding-left: 7.5vh;
+  }
+
+  .row-1,
+  .row-2,
+  .row-3 {
+    left: 15%;
+  }
 }

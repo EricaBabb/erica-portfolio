@@ -4,6 +4,7 @@
   padding: 0;
 }
 
+/* Common Colors */
 :root {
   --dark-purple: #7200f7;
   --indigo: #0c025a;
@@ -13,6 +14,7 @@
   --army-green: #9a9e4f;
 }
 
+/* Common Fonts */
 @font-face {
   font-family: Custard;
   src: url(./custard.otf);
@@ -109,6 +111,7 @@ section {
   left: 42%;
   width: 40vh;
   top: 0px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 /* Section End */
 
@@ -133,6 +136,7 @@ section {
   position: absolute;
   margin-top: 35vh;
   margin-left: 10vh;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .heading h1 {
@@ -160,6 +164,7 @@ section {
   align-items: flex-start;
 }
 
+/* My picture */
 #erica {
   width: 40vh;
   height: 35vh;
@@ -194,8 +199,10 @@ section {
   bottom: 150px;
   width: 900px;
   height: 180px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Rectangle on top of paragraph */
 .rectangle-1 {
   position: absolute;
   bottom: 335px;
@@ -204,6 +211,7 @@ section {
   border-radius: 20px;
 }
 
+/* Rectangle on bottom of paragraph */
 .rectangle-2 {
   position: absolute;
   bottom: 150px;
